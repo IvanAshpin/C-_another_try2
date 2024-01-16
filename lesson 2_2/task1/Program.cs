@@ -12,7 +12,7 @@ Console.WriteLine(arr[4]);
 
 //Console.WriteLine(arr[5]);
 
-int[] arr2 = new int[5] { 1, 2,, 3, 4, 5 };
+int[] arr2 = new int[5] { 0, 1, 2, 3, 4, };
 
 
 int[] arr3 = { 1, 2, 3, 4, 5 };
