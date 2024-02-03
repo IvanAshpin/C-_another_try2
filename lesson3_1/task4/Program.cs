@@ -1,17 +1,21 @@
-﻿Random rnd = new Random();
+﻿Random random = new Random();
 
-int size = 1000;
-int[] arr_int = new int[size];
-int i = 0;
-while(i < size)
+int[] numbers = new int[200];
+for (int i = 0; i < numbers.Length; i++)
 {
-    arr_int[i] = rnd.Next(1, 10);
-    i++;
+    numbers[i] = random.Next(1, 200);
 }
 
-i = 0;
-while(i < size)
+int[] arr = new int[175];
+for (int i = 0; i < arr.Length; i++)
 {
-    Console.Write($"{arr_int[i]} ");
-    i++;
+    if (arr[i] % 2 == 0)
+    {
+        arr[i] = 0;
+    }
+}
+
+public static void printResult(int count, List<int> primes)
+{
+    Console.WriteLine("Количество четных чисел в массиве: " + count);
 }
